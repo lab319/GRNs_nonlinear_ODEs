@@ -25,6 +25,9 @@ def estimate_degradation_rates(TS_data,time_points):
     x(t) =  A exp(-alpha * t) + C_min,
     between the highest and lowest expression values.
     C_min is set to the minimum expression value over all genes and all samples.
+    The function is available at the study named dynGENIE3.
+    Huynh-Thu, V., Geurts, P. dynGENIE3: dynamical GENIE3 for the inference of
+    gene networks from time series expression data. Sci Rep 8, 3384 (2018) doi:10.1038/s41598-018-21715-0
     """
     
     ngenes = TS_data[0].shape[1]
@@ -87,7 +90,6 @@ def get_importances(TS_data, time_points, alpha="from_data",  SS_data=None, gene
         input_idx = idx.copy()
         if i in input_idx:
             input_idx.remove(i)
-        #print('Gene %d/%d...' % (i+1,ngenes))      
         vi = get_importances_single(TS_data, time_points, alphas[i], input_idx, i, SS_data, param)
         VIM[i,:] = vi
 
