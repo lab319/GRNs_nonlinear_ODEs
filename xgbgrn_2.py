@@ -77,6 +77,7 @@ def get_scores(VIM, gold_edges, gene_names, regulators):
     pred_edges = [(gene_names[j], gene_names[i], score) for (i, j), score in np.ndenumerate(VIM) if i != j and j in idx]
     pred_edges = pd.DataFrame(pred_edges)
     pred_edges.sort_values(2, ascending=False, inplace=True)
+    # Take the top 100000 predicted results
     pred_edges = pred_edges.iloc[:100000]
     final = pd.merge(pred_edges, gold_edges, on=[0, 1], how='inner')
     auroc = roc_auc_score(final['2_y'], final['2_x'])

@@ -103,7 +103,7 @@ def get_importances(TS_data, time_points, alpha="from_data",  SS_data=None, gene
 
 def get_importances_single(TS_data, time_points, alpha, input_idx, output_idx, SS_data, param):
 
-    h = 1
+    h = 1 # define the value of time step
 
     ngenes = TS_data[0].shape[1]
     nexp = len(TS_data)
@@ -158,6 +158,7 @@ def get_scores(VIM, gold_edges, gene_names, regulators):
     idx = [i for i, gene in enumerate(gene_names) if gene in regulators]
     pred_edges = [(gene_names[j], gene_names[i], score) for (i, j), score in np.ndenumerate(VIM) if i != j and j in idx]
     pred_edges = pd.DataFrame(pred_edges)
+    # Take the top 100,000 predicated results
     pred_edges = pred_edges.iloc[:100000]
     final = pd.merge(pred_edges, gold_edges, on=[0, 1], how='inner')
     auroc = roc_auc_score(final['2_y'], final['2_x'])
