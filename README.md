@@ -10,9 +10,9 @@ Baoshan Ma1,*, Mingkun Fang1 and Xiangtian Jiao1
 ### The describe of the program 
 
 ```
-The program of xgbgrn can combine time-series data and  steady-state data to infer GRNs, the steady-state data is not necessary.
+The program of xgbgrn can combine time-series data and steady-state data to infer GRNs, the steady-state data is not necessary.
 
-The program of xgbgrn_2 can only be applied to  a type of  data.
+The program of xgbgrn_2 can only be applied to one type of data.
 ```
 
 
