@@ -26,18 +26,18 @@ The program of xgbgrn_2 can only be applied to one type of data.
 
 ### Parameters
     xgbgrn:
-    	TS_data: a matrix of time-series data
-    	time_points: a list of time points
-    	alpha:a constant or specify "from_data"
-    	SS_data: a matrix of time-series data, the default is "none"
-    	gene_names: a list of gene names
-    	regulators: a list of names of regulatory genes, the default is "all", 
-    	param: a dict of parameters of xgboost
+        TS_data: a matrix of time-series data
+        time_points: a list of time points
+        alpha:a constant or specify "from_data"
+        SS_data: a matrix of time-series data, the default is "none"
+        gene_names: a list of gene names
+        regulators: a list of names of regulatory genes, the default is "all", 
+        param: a dict of parameters of xgboost
     	
     xgbgrn_2:
-    expr_data: a matrix of gene expression data
-    gene_names: a list of gene names
-    regulators: a list of names of regulatory genes
-    param: a dict of parameters of xgboost
+        expr_data: a matrix of gene expression data
+        gene_names: a list of gene names
+        regulators: a list of names of regulatory genes
+        param: a dict of parameters of xgboost
 
 
