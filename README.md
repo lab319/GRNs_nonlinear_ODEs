@@ -8,7 +8,7 @@ Baoshan Ma1,*, Mingkun Fang1 and Xiangtian Jiao1
 **The proposed method is a scalable method exploiting time-series and steady-state data jointly, in which nonlinear ODEs and XGBoost are employed to infer gene regulatory networks.** 
 
 If you find our method is useful, please cite our paper:
-Baoshan Ma, Mingkun Fang, Xiangtian Jiao, Inference of Gene Regulatory Networks Based on Nonlinear Ordinary Differential Equations, Bioinformatics, , btaa032, https://doi.org/10.1093/bioinformatics/btaa032
+Baoshan Ma, Mingkun Fang, Xiangtian Jiao. Inference of gene regulatory networks based on nonlinear ordinary differential equations. Bioinformatics, 2020,36(19):4885-4893. https://doi.org/10.1093/bioinformatics/btaa032
 ### The describe of the program 
 
 ```
